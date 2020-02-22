@@ -1,8 +1,6 @@
 # Two Sum
 
-## Citation  
-
-Leetcode: https://leetcode.com/problems/two-sum/  
+Citation: https://leetcode.com/problems/two-sum/  
 &nbsp;
 
 ## Description of Problem
