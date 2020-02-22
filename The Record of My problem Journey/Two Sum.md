@@ -2,7 +2,6 @@
 
 Citation: https://leetcode.com/problems/two-sum/  
 
-&nbsp;
 
 ## Description of Problem
 
@@ -12,9 +11,8 @@ You may assume that each input would have exactly one solution, and you may not 
 
 &nbsp;
 
+``` 
 Example:
-
-```
 Given nums = [2, 7, 11, 15], target = 9,
 
 Because nums[0] + nums[1] = 2 + 7 = 9,
@@ -22,6 +20,14 @@ return [0, 1].
 ```
 
 
+## The first time
+
+### Strategy 
+
+Traversing the array to find the sum of two different elements equals the target.
+
+
+### Code
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -39,3 +45,19 @@ class Solution {
     }
 }
 ```
+
+
+### Details
+
+Runtime: 108 ms, faster than 5.02% of Java online submissions for Two Sum.
+Memory Usage: 39.4 MB, less than 5.65% of Java online submissions for Two Sum.
+
+### Complexity Analysis
+
++ Time Complexity
+
++ Space Complexity
+
+### Drawbacks
+
+
