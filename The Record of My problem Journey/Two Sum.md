@@ -19,7 +19,7 @@ return [0, 1].
 ```
 
 
-## The first time
+## The first time (Brute Force)
 
 ### Strategy 
 
