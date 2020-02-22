@@ -1,3 +1,3 @@
-# Java-Leetcode
+# Java-LeetCode
 Coding for familiarizing algorithm 
 
