@@ -54,7 +54,7 @@ Memory Usage: 39.4 MB, less than 5.65% of Java online submissions for Two Sum.
 
 ### Complexity Analysis
 
-+ Time Complexity $O(n^2)$
++ Time Complexity O(n<sup>2</sup>)
 
 + Space Complexity
 
