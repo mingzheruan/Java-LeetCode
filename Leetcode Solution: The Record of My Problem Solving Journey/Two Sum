@@ -1,4 +1,5 @@
 
+```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
        Map m1 = new HashMap();
@@ -14,3 +15,4 @@ class Solution {
         throw new IllegalArgumentException("No solution of two sum");
     }
 }
+```
