@@ -59,6 +59,12 @@ Memory Usage: 39.7 MB, less than 5.65% of Java online submissions for Two Sum.
 
 ### Drawbacks
 
+### Cause - why cannot I get the better idea? 
+
+I don't know the knowledge.
+
+I need to practice more algorithm.
+
 ## The second time
 
 
