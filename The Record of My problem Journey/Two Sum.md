@@ -45,13 +45,15 @@ class Solution {
 ```
 
 
-### Details
+
+###  Analysis
+
+
+#### Details
 
 Runtime: 106 ms, faster than 5.12% of Java online submissions for Two Sum.
 
 Memory Usage: 39.7 MB, less than 5.65% of Java online submissions for Two Sum.
-
-###  Analysis
 
 #### Complexity
 
@@ -104,13 +106,14 @@ class Solution {
 }
 ```
 
-### Details
+###  Analysis
+
+
+#### Details
 
 Runtime: 2 ms, faster than 80.73% of Java online submissions for Two Sum.
 
 Memory Usage: 41.9 MB, less than 5.65% of Java online submissions for Two Sum.
-
-###  Analysis
 
 #### Complexity
 
