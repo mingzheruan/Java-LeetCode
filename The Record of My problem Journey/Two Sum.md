@@ -65,7 +65,7 @@ class Solution {
 
 + The speed of algorithm is slow.
 
-### 4.Cause - why cannot I get the better idea? 
+### Cause - why cannot I get the better idea? 
 
 I forget the knowledge.
 
