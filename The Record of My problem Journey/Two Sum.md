@@ -21,12 +21,12 @@ return [0, 1].
 
 ## The first time (Brute Force)
 
-1. Strategy 
+### 1.Strategy 
 
 Traversing the array gets the sum of two different elements, which equals the target.
 
 
-2. Code
+### 2.Code
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -46,7 +46,7 @@ class Solution {
 
 
 
-3.  Analysis
+### 3.Analysis
 
 
 #### Details
@@ -65,7 +65,7 @@ Memory Usage: 39.7 MB, less than 5.65% of Java online submissions for Two Sum.
 
 The speed of algorithm is slow.
 
-4. Cause - why cannot I get the better idea? 
+### 4.Cause - why cannot I get the better idea? 
 
 I forget the knowledge.
 
