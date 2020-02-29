@@ -127,7 +127,7 @@ class Solution {
 
 + We should judge the complement whether is stored in HashMap!!!
 
-### Cause - why cannot I get the this idea in advance? 
+### Cause - why cannot I get the this idea? 
 
 I forget the knowledge of HashMap.
 
