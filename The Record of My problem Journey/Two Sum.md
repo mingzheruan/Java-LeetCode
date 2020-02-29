@@ -76,7 +76,7 @@ I need to practice more algorithm.
 
 
 
-## The second time
+## The second time (HashMap)
 
 ### Strategy 
 
@@ -109,7 +109,7 @@ class Solution {
 ###  Analysis
 
 
-#### Details
+1. Details
 
 Runtime: 2 ms, faster than 80.73% of Java online submissions for Two Sum.
 
