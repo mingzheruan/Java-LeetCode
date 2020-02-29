@@ -23,7 +23,7 @@ return [0, 1].
 
 ### Strategy 
 
-Traversing the array to find the sum of two different elements equals the target.
+Traversing the array gets the sum of two different elements, which equals the target.
 
 
 ### Code
@@ -51,23 +51,81 @@ Runtime: 106 ms, faster than 5.12% of Java online submissions for Two Sum.
 
 Memory Usage: 39.7 MB, less than 5.65% of Java online submissions for Two Sum.
 
-### Complexity Analysis
+###  Analysis
+
+#### Complexity
 
 + Time Complexity: O(n<sup>2</sup>)
 
 + Space Complexity: O(1)
 
-### Drawbacks
+#### Drawbacks
 
 The speed of algorithm is slow.
 
 ### Cause - why cannot I get the better idea? 
 
-I don't know the knowledge.
+I forget the knowledge.
 
 I need to practice more algorithm.
 
+
+
+
+
+
 ## The second time
 
+### Strategy 
+
+Using HashMap stores data and increases the efficiency of searching
+
+### Code
+
+``` java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for(int i=0;i<nums.length;i++){
+            map.put(nums[i],i);
+        }
+
+        for(int j=0;j<nums.length;j++){
+            int complement = target - nums[j];
+            if(map.containsKey(complement) && map.get(complement) != j){
+                return new int[] {j,map.get(complement)};
+            }
+        }
+        
+        throw new IllegalArgumentException("No two sum solution");
+
+    }
+}
+```
+
+### Details
+
+Runtime: 2 ms, faster than 80.73% of Java online submissions for Two Sum.
+
+Memory Usage: 41.9 MB, less than 5.65% of Java online submissions for Two Sum.
+
+###  Analysis
+
+#### Complexity
+
++ Time Complexity: O(n)
+
++ Space Complexity: O(n)
+
+#### Drawbacks
+
+#### Attention
+
+We should judge the complement whether is stored in HashMap!!!
+
+### Cause - why cannot I get the this idea in advance? 
+
+I forget the knowledge of HashMap.
 
 
