@@ -21,12 +21,12 @@ return [0, 1].
 
 ## The first time (Brute Force)
 
-### 1.Strategy 
+### Strategy 
 
 Traversing the array gets the sum of two different elements, which equals the target.
 
 
-### 2.Code
+### Code
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -46,14 +46,14 @@ class Solution {
 
 
 
-### 3.Analysis
+### Analysis
 
 
 #### Details
 
-Runtime: 106 ms, faster than 5.12% of Java online submissions for Two Sum.
++ Runtime: 106 ms, faster than 5.12% of Java online submissions for Two Sum.
 
-Memory Usage: 39.7 MB, less than 5.65% of Java online submissions for Two Sum.
++ Memory Usage: 39.7 MB, less than 5.65% of Java online submissions for Two Sum.
 
 #### Complexity
 
@@ -63,7 +63,7 @@ Memory Usage: 39.7 MB, less than 5.65% of Java online submissions for Two Sum.
 
 #### Drawbacks
 
-The speed of algorithm is slow.
++ The speed of algorithm is slow.
 
 ### 4.Cause - why cannot I get the better idea? 
 
@@ -111,9 +111,9 @@ class Solution {
 
 #### Details
 
-Runtime: 2 ms, faster than 80.73% of Java online submissions for Two Sum.
++ Runtime: 2 ms, faster than 80.73% of Java online submissions for Two Sum.
 
-Memory Usage: 41.9 MB, less than 5.65% of Java online submissions for Two Sum.
++ Memory Usage: 41.9 MB, less than 5.65% of Java online submissions for Two Sum.
 
 #### Complexity
 
@@ -125,7 +125,7 @@ Memory Usage: 41.9 MB, less than 5.65% of Java online submissions for Two Sum.
 
 #### Attention
 
-We should judge the complement whether is stored in HashMap!!!
++ We should judge the complement whether is stored in HashMap!!!
 
 ### Cause - why cannot I get the this idea in advance? 
 
