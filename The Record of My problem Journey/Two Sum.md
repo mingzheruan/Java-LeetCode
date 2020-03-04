@@ -76,7 +76,7 @@ I need to practice more algorithm.
 
 
 
-## The second time (HashMap)
+## The second time (two-pass HashMap)
 
 ### Strategy 
 
@@ -106,9 +106,6 @@ class Solution {
 }
 ```
 
-###  Analysis
-
-
 #### Details
 
 + Runtime: 2 ms, faster than 80.73% of Java online submissions for Two Sum.
@@ -132,3 +129,54 @@ class Solution {
 I forget the knowledge of HashMap.
 
 
+
+## The third time (one-pass HashMap)
+
+### Strategy 
+
+Using HashMap stores data and increases the efficiency of searching
+
+### Code
+
+``` java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+
+        for(int j=0;j<nums.length;j++){
+            int complement = target - nums[j];
+            if(map.containsKey(complement) && map.get(complement) != j){
+                return new int[] {j,map.get(complement)};
+            }
+            map.put(nums[j],j);
+        }
+        
+        throw new IllegalArgumentException("No two sum solution");
+
+    }
+}
+```
+
+###  Analysis - why the speed of one-pass HashMap is more faster than the speed of two-pass HashMap? what's advantage?
+
++ Decreasing the number of iteration from two to one.
+
++ The speed of algorithm doubles its original one.
+
+
+#### Details
+
++Runtime: 1 ms, faster than 99.89% of Java online submissions for Two Sum.
+
++Memory Usage: 42.3 MB, less than 5.65% of Java online submissions for Two Sum.
+
+#### Complexity
+
++ Time Complexity: O(n)
+
++ Space Complexity: O(n)
+
+### Cause - why cannot I get the this idea? 
+
+I forget the knowledge of HashMap.
