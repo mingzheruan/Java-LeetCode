@@ -23,7 +23,7 @@ Explanation: [4,-1,2,1] has the largest sum = 6.
 
 ### Strategy 
 
-Traversing the array gets the sum of two different elements, which equals the target.
+Traversing the array gets the sum of some elements that is biggest.
 
 
 ### Code
@@ -65,31 +65,23 @@ class Solution {
 
 ### Analysis
 
-
-#### Details
-
-+ Runtime: 106 ms, faster than 5.12% of Java online submissions for Two Sum.
-
-+ Memory Usage: 39.7 MB, less than 5.65% of Java online submissions for Two Sum.
-
 #### Complexity
 
-+ Time Complexity: O(n<sup>2</sup>)
++ Time Complexity: O(n<sup>3</sup>)
 
 + Space Complexity: O(1)
 
 #### Drawbacks
 
-+ The speed of algorithm is slow.
-
-### Cause - why cannot I get the better idea? 
-
-I forget the knowledge.
-
-I need to practice more algorithm.
++ The speed of algorithm is too slow.
 
 
 
+### Knowledges
+
++ Arrays.copyOfRange(nums[] , from , to)       to obtain the sum of contiguous element. 
+
++
 
 
 
