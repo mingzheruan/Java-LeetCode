@@ -19,7 +19,7 @@ return [0, 1].
 ```
 
 
-## The first time (Brute Force)
+## The first solution (Brute Force)
 
 ### Strategy 
 
@@ -76,7 +76,7 @@ I need to practice more algorithm.
 
 
 
-## The second time (two-pass HashMap)
+## The second solution (two-pass HashMap)
 
 ### Strategy 
 
@@ -130,7 +130,7 @@ I forget the knowledge of HashMap.
 
 
 
-## The third time (one-pass HashMap)
+## The third solution (one-pass HashMap)
 
 ### Strategy 
 
