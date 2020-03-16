@@ -79,9 +79,8 @@ class Solution {
 
 ### Knowledges
 
-+ Arrays.copyOfRange(nums[] , from , to)       to obtain the sum of contiguous element. 
++ Arrays.copyOfRange(nums[] , from , to)   &nbsp;   to obtain the sum of contiguous element. 
 
-+
 
 
 
