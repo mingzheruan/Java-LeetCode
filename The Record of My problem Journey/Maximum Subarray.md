@@ -29,17 +29,34 @@ Traversing the array gets the sum of two different elements, which equals the ta
 ### Code
 ```java
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
-            for(int i=0;i<=nums.length;i++){
-                for(int j=0; j<nums.length;j++){
-                     if(nums[j] + nums[i+1] == target){
-                         if(i+1 != j){
-                              return new int[] {j,i+1};
-                         }
-                     }   
-                } 
-             }
-        throw new IllegalArgumentException("No solution of two sum");
+    public int maxSubArray(int[] nums) {
+        
+        int largestSum = nums[0];
+        
+        
+            for(int q=0;q<nums.length;q++){
+
+                for(int i=0;i<nums.length && i+q<nums.length;i++){
+
+                    int comparisonSum = 0;
+                    int subarray[] = Arrays.copyOfRange(nums,i,i+q+1);
+
+                    for(int j=0;j<subarray.length;j++){
+
+                        comparisonSum = comparisonSum + subarray[j];
+
+                    }
+
+                    if(comparisonSum > largestSum){
+
+                        largestSum = comparisonSum;
+
+                    }else{}
+                }
+            }
+        
+        return largestSum;
+        
     }
 }
 ```
