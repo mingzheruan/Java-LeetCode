@@ -181,7 +181,7 @@ class Solution {
 
 #### Complexity
 
-+ Time Complexity: O(Nlog(N))
++ Time Complexity: O(N·log(N))
 
 + Space Complexity: O(log(N))
 
