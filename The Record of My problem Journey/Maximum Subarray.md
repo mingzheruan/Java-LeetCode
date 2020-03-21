@@ -96,60 +96,65 @@ Traversing the array gets the sum of some elements that is biggest.
 ```java
 class Solution {
     
-  public int crossSum(int[] nums, int left, int right, int p) {
-      
-    if (left == right) return nums[left];// if the left is equal with the right, it expresses there is only one element in Array.
-    
-    //left
-    int currSum = 0;
-    int leftSubsum = Integer.MIN_VALUE;
-    
-      
-    for(int i = p; i > left - 1; --i) {//from the middle to the left
+    public int corrSum(int [] nums, int left, int right, int p){   //to obtain the biggest number
         
-      currSum += nums[i];
-      leftSubsum = Math.max(leftSubsum, currSum);
+        if(left == right){
+            
+            return nums[left];
+            
+        } 
+
+        int leftSubSum = Integer.MIN_VALUE;
+        int corrsum = 0;
+        
+        for(int i = p; i > left - 1 ; --i){
+            
+            corrsum += nums[i];
+            leftSubSum = Math.max(leftSubSum, corrsum);
+            
+        }
+        
+        int rightSubSum = Integer.MIN_VALUE;
+        corrsum = 0;
+        
+        for(int i = p + 1 ; i < right + 1 ; ++i){
+            
+            corrsum += nums[i];
+            rightSubSum = Math.max(rightSubSum, corrsum);
+        }
+        
+        return leftSubSum + rightSubSum;
         
     }
-
-    //right 
-    currSum = 0;
-    int rightSubsum = Integer.MIN_VALUE;
     
-      
-    for(int i = p + 1; i < right + 1; ++i) {//from the middle to the right
+    
+    public int helper(int [] nums, int left, int right){
         
-      currSum += nums[i];
-      rightSubsum = Math.max(rightSubsum, currSum);
+        if(left == right){
+            
+            return nums[left];
+            
+        }
+        
+        
+        int p = (left + right) / 2;
+        
+        int leftSum = helper(nums, left, p);  // left
+        int rightSum = helper(nums, p + 1, right);    //right
+        int corrsum = corrSum(nums, left, right, p);   //middle
+        
+        return Math.max(Math.max(leftSum,rightSum), corrsum);   //return the biggest number
         
     }
-
-    return leftSubsum + rightSubsum;//return sum of all elements
-      
-  }
-
-    
-  public int helper(int[] nums, int left, int right) {
     
     
-    if (left == right) return nums[left];// if the left is equal with the right, it expresses there is only one element in Array.
     
-    int p = (left + right) / 2; //This line of program to give a certain middle number that is integer.
-
-    int leftSum = helper(nums, left, p);
-    int rightSum = helper(nums, p + 1, right);
-    int crossSum = crossSum(nums, left, right, p);
-
-    return Math.max(Math.max(leftSum, rightSum), crossSum);//return the largest number
-      
-  }
-
     
-  public int maxSubArray(int[] nums) {
-      
-    return helper(nums, 0, nums.length - 1);    //calling the function of helper
-  
-  }
+    public int maxSubArray(int[] nums) {    // calling the function of helper
+        
+         return helper(nums, 0 , nums.length - 1);
+    
+    }
 }
 ```
 
