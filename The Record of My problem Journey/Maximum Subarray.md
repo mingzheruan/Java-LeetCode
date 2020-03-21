@@ -181,23 +181,14 @@ class Solution {
 
 #### Complexity
 
-+ Time Complexity: O(n<sup>3</sup>)
++ Time Complexity: O(Nlog(N))
 
-+ Space Complexity: O(1)
-
-#### Drawbacks
-
-+ The speed of algorithm is too slow.
-
-
++ Space Complexity: O(log(N))
 
 
 ### Knowledges(notes)
 
-+ Arrays.copyOfRange(nums[] , from , to)   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  to obtain the sum of contiguous element. 
-
-+ The Google Coding Standards
-
++ how to compute the time complexity.
 
 
 
