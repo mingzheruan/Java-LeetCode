@@ -1,4 +1,6 @@
-# [Maximum Subarray]( https://leetcode.com/problems/maximum-subarray/)
+# Maximum Subarray
+
+Citation of Problem: https://leetcode.com/problems/maximum-subarray/
 
 
 ## Description of Problem
