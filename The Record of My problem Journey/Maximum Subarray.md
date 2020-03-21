@@ -78,7 +78,7 @@ class Solution {
 
 
 
-### Knowledges(notes)
+### Knowledges
 
 + Arrays.copyOfRange(nums[] , from , to)   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  to obtain the sum of contiguous element. 
 
@@ -186,7 +186,7 @@ class Solution {
 + Space Complexity: O(log(N))
 
 
-### Knowledges(notes)
+### Knowledges
 
 + how to compute the time complexity.
 
