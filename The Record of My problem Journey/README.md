@@ -1,8 +1,8 @@
 # Classification of Problems in LeetCode
 
-## some important knowledges
+## Some important knowledges
 
-+ [Google Coding Standard](https://google.github.io/styleguide/javaguide.html)
++ [Google's Coding Standard](https://google.github.io/styleguide/javaguide.html)
 
 + How to compute complexity of time
 
