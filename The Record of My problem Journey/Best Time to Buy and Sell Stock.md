@@ -5,16 +5,28 @@ Citation of Problem: https://leetcode.com/problems/best-time-to-buy-and-sell-sto
 
 ## Description of Problem
 
-Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+Say you have an array for which the *i*th element is the price of a given stock on day *i*.
+
+If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.
+
+Note that you cannot sell a stock before you buy one.
 
 
 
 ``` 
-Example:
+Example 1:
 
-Input: [-2,1,-3,4,-1,2,1,-5,4],
-Output: 6
-Explanation: [4,-1,2,1] has the largest sum = 6.
+Input: [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+             Not 7-1 = 6, as selling price needs to be larger than buying price.
+
+
+Example 2:
+
+Input: [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 ```
 
@@ -30,33 +42,63 @@ Traversing the array gets the sum of some elements that is biggest.
 
 ```java
 class Solution {
-    public int maxSubArray(int[] nums) {
+    
+    /*basicSum
+    
+    Function: Solving the basci problems
+    
+    */
+    
+    public int basicSum(int [] prices, int left, int right , int p){
         
-        int largestSum = nums[0];
+        int biggestValue = Integer.MIN_VALUE;
+        int corrsum = 0;
         
         
-            for(int q=0;q<nums.length;q++){
-
-                for(int i=0;i<nums.length && i+q<nums.length;i++){
-
-                    int comparisonSum = 0;
-                    int subarray[] = Arrays.copyOfRange(nums,i,i+q+1);
-
-                    for(int j=0;j<subarray.length;j++){
-
-                        comparisonSum = comparisonSum + subarray[j];
-
-                    }
-
-                    if(comparisonSum > largestSum){
-
-                        largestSum = comparisonSum;
-
-                    }else{}
-                }
+        for(int i = right; i > left - 1 ; --i){
+            for(int j = i ; j > left -1 ; --j){
+                
+                corrsum = prices[i] - prices[j];
+                biggestValue = Math.max(corrsum, biggestValue);
+                
             }
+        }
         
-        return largestSum;
+        if(biggestValue < 0){
+            return 0;
+        }else{
+            return biggestValue;
+        }
+        
+    }
+    
+    
+    /*partition
+    
+    Function: Dividing a big problem into some same and basic problems 
+              decreases the computation in order to simplify the question.
+    
+    */
+    
+    public int partition(int [] prices, int left , int right){
+        
+        if(left == right) return 0;
+        
+        int p = (left + right)/2;
+        
+        int leftSum = partition(prices, left , p);
+        int rightSum = partition(prices, p + 1 , right);
+        int corrSum = basicSum(prices, left , right , p);
+        
+        return Math.max(Math.max(leftSum,rightSum),corrSum);
+        
+    }
+    
+    
+    
+    public int maxProfit(int[] prices) {
+        
+        return partition(prices, 0 , prices.length - 1);
         
     }
 }

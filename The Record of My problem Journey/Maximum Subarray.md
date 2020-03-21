@@ -71,6 +71,8 @@ class Solution {
 
 + Space Complexity: O(1)
 
+  
+
 #### Drawbacks
 
 + The speed of algorithm is too slow.
@@ -89,7 +91,9 @@ class Solution {
 
 ### Strategy 
 
-Traversing the array gets the sum of some elements that is biggest.
+Using Divide and Conquer Approach simplify the problem. Dividing the prblem into many same and small problems.
+
+
 
 
 ### Code
