@@ -96,9 +96,17 @@ Traversing the array gets the sum of some elements that is biggest.
 ```java
 class Solution {
     
-    public int corrSum(int [] nums, int left, int right, int p){   //to obtain the biggest number
+    /* corrSum
+    
+    Function: Dividing the acquired array into two parts obtains the separately biggest value of two parts. 
+    
+    Signifiance: Solving the same and basis problems, which is made by the function of partition.
+    
+    */
+    
+    public int corrSum(int [] nums, int left, int right, int p){   
         
-        if(left == right){
+        if(left == right){  //return the single element.
             
             return nums[left];
             
@@ -128,7 +136,16 @@ class Solution {
     }
     
     
-    public int helper(int [] nums, int left, int right){
+    /* partition
+    
+    Function: Dividing a big array into lots of parts decreases the number of calculation in order to simplify problems. 
+    
+    Signifiance: Dividing a big problem into many same and basis problems.
+    
+    */
+    
+    
+    public int partition(int [] nums, int left, int right){
         
         if(left == right){
             
@@ -139,20 +156,20 @@ class Solution {
         
         int p = (left + right) / 2;
         
-        int leftSum = helper(nums, left, p);  // left
-        int rightSum = helper(nums, p + 1, right);    //right
-        int corrsum = corrSum(nums, left, right, p);   //middle
+        int leftSum = partition(nums, left , p);  
+        int rightSum = partition(nums, p + 1 , right);    
+        int corrsum = corrSum(nums, left , right, p);   
         
-        return Math.max(Math.max(leftSum,rightSum), corrsum);   //return the biggest number
+        return Math.max(Math.max(leftSum,rightSum), corrsum);   //return the biggest value
         
     }
     
     
     
     
-    public int maxSubArray(int[] nums) {    // calling the function of helper
+    public int maxSubArray(int[] nums) {
         
-         return helper(nums, 0 , nums.length - 1);
+         return partition(nums, 0 , nums.length - 1);
     
     }
 }
