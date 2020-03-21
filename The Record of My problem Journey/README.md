@@ -1,4 +1,4 @@
-# Classification of Problem in LeetCode
+# Classification of Problems in LeetCode
 
 ## Divide and Conquer approach
 
