@@ -14,7 +14,20 @@ Some features:
 
 1. The problem can be narrowed to the extent, which is easy to solve.
 2. The problem can be divided into some same and small questions, it means optimal substructure.
-3. I like you
+3. These subproblems of problem can merge as the solution of this problem.
+4. The'se subproblems are independent,  which means that subproblems don't contain the public sub-subproblem
+
+
+
+Applied Algorithms:
+
+1. Binary Search
+2. Quicksort
+3. Merge Sort
+4. Closest Pair of Points
+5. Strassen's Algorithm
+6. Cooley - Turkey Fast Fourier Transform(FFT) Algorithm
+7. Karatsuba Algorithem for Fast Multiplication
 
 
 
