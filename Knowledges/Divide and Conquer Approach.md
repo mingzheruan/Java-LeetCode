@@ -1,6 +1,6 @@
 # Divide and Conquer Approach
 
-Citation(chinese): [分值算法](https://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741370.html)
+Citation(chinese): [分治算法](https://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741370.html)
 
 ## Introduction
 
