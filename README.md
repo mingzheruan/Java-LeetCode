@@ -10,7 +10,7 @@
 ### Divide and Conquer Approach
 
 1. [Maximum Subarray](https://github.com/mingzheruan/Java-LeetCode/blob/master/The%20Record%20of%20My%20problem%20Journey/Maximum%20Subarray.md)
-2. [Maximum Element](Majority Element.md)
+2. [Maximum Element](https://github.com/mingzheruan/Java-LeetCode/blob/master/The%20Record%20of%20My%20problem%20Journey/Majority%20Element.md)
 
 ### Hashmap
 
