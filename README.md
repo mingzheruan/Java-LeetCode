@@ -14,7 +14,7 @@
 
 ### Hashmap
 
-1. [Two Sum](https://github.com/mingzheruan/Java-LeetCode/blob/master/The Record of My problem Journey/Two Sum.md))
+1. [Two Sum](https://github.com/mingzheruan/Java-LeetCode/blob/master/The Record of My problem Journey/Two Sum.md)
 
 templecity@icbc-us.com
 
