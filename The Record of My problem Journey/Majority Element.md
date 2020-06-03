@@ -31,9 +31,7 @@ Output: 2
 
 ### Strategy 
 
-Using Divide and Conquer Approach simplify the problem. Dividing the prblem into many same and small problems.
-
-
+Here, we apply a classical divide & conquer approach that recurses on the left and right halves of an array until an answer can be trivially achieved for a length-1 array. Note that because actually passing copies of subarrays costs time and space, we instead pass `lo` and `hi` indices that describe the relevant slice of the overall array. In this case, the majority element for a length-1 slice is trivially its only element, so the recursion stops there. If the current slice is longer than length-1, we must combine the answers for the slice's left and right halves. If they agree on the majority element, then the majority element for the overall slice is obviously the same[[1\]](https://leetcode.com/problems/majority-element/solution/#fn1). If they disagree, only one of them can be "right", so we need to count the occurrences of the left and right majority elements to determine which subslice's answer is globally correct. The overall answer for the array is thus the majority element between indices 0 and 
 
 
 ### Code
@@ -99,12 +97,18 @@ class Solution {
 + Time Complexity: O(N·log(N))
 + Space Complexity: O(log(N))
 
+#### Details
+
++ Runtime: 1 ms, faster than 99.67% of Java online submissions for Majority Element.
+
++ Memory Usage: 42.8 MB, less than 42.65% of Java online submissions for Majority Element.
+
 
 
 
 ### Knowledges
 
-+ how to compute the time complexity.
++ 
 
 
 
